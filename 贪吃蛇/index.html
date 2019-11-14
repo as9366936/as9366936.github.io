@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map" id="map"></div>
+
+
+    <!-- <script src="./Food.js"></script>
+    <script src="./Snake.js"></script>
+    <script src="./Game.js"></script> -->
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+
+
+        // 获取到地图
+        var map = document.getElementById('map');
+
+        // 调用Game这个构造函数, 创建一个游戏控制器对象
+        var game = new Game(map);
+        // console.log(game);
+
+        // 调用游戏控制器的开始方法, 让游戏开始
+        game.start();
+
+        // -----------------------------------------------------------
+
+        // // 调用Food这个构造函数创建一个食物对象
+        // var f1 = new Food(); // 等价于  var fi = new window.Food();
+        // // 调用render这个方法,让食物对象渲染出来
+        // f1.render(map);
+
+
+        // // 调用Snake这个构造函数创建一个蛇对象
+        // var s1 = new Snake();
+        // // 调用蛇的render这个方法, 让蛇渲染出来
+        // s1.render(map);
+
+
+        // // 让蛇动起来
+        // // 让蛇吃食物长身体
+    </script>
+</body>
+
+</html>
