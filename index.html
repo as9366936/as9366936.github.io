@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <button id="btn">点我玩蛇</button>
     <div class="map" id="map"></div>
 
 
@@ -36,8 +37,10 @@
         var game = new Game(map);
         // console.log(game);
 
-        // 调用游戏控制器的开始方法, 让游戏开始
-        game.start();
+        document.querySelector('#btn').onclick = function () {
+            // 调用游戏控制器的开始方法, 让游戏开始
+            game.start();
+        }
 
         // -----------------------------------------------------------
 
